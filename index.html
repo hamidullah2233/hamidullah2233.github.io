@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamid Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            background-color: rgb(210, 196, 238);
+             body {
+            margin-left: 269px;
+            background: linear-gradient(to bottom right, #1e1e2f, #2d2d44);
+            
+            background-size: cover;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        }
+          @keyframes fadeIn {
+            from {
+                opacity: 4;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 140px;
+            height: 50vh;
+            background: rgba(0, 0, 0, 0.85);
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 40px;
+            backdrop-filter: blur(8px);
+            animation: slideLeft 1s ease;
+        }
+
+        @keyframes slideLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            color: #00ffea;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 14px 25px;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #00ffea;
+            color: black;
+            transform: translateX(10px);
+        }
+
+        /* Sections Animation */
+        .section-animate {
+            animation: fadeUp 1.4s ease;
+        }
+
+        
+
+      
+        
+        .leftsection h1,
+        .leftsection h3 {
+            color: black;
+        }
+          nav ul li a:hover {
+            font-size: 1.2rem;
+            color: rgb(218, 82, 139);
+        }
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 60px 0;
+            flex-wrap: wrap;
+            margin-left: 180px !important
+        }
+        
+        .leftsection {
+            color: black;
+            font-size: 2rem;
+        }
+        
+        .purple {
+            color: blue;
+        }
+        
+        .rightsection img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        
+        #element {
+            color: blue;
+            font-weight: bold;
+        }
+        
+        
+        
+        .purple {
+            color: blue;
+        }
+        
+        .about-heading {
+            color: black;
+            margin-bottom: 20px;
+        }
+        #about {
+    margin-left: 180px !important
+        }
+
+        .about-text {
+            color: black;
+        align-content: space-around;        }
+        
+        .edu-detail {
+            display: none;
+            background: #f2f2f2;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 5px;
+        }
+        
+        .dmc-img {
+            width: 100%;
+            max-width: 250px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 2px solid gray;
+        }
+        
+        .download-btn {
+            margin-top: 10px;
+        }
+          @keyframes glow {
+            from {
+                box-shadow: 0px 0px 8px #00ffea;
+            }
+            to {
+                box-shadow: 0px 0px 20px #00ffea;
+            }
+        }
+
+        
+        .slide-btn {
+            margin-top: 10px;
+        }
+        .page-title {
+    margin-left: 260px;
+    padding: 20px;
+    color: #0e1a19;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+
+<body>
+    <h2 class="page-title">Hamid Portfolio</h2>
+
+     
+     <!-- Sidebar -->
+    <div class="sidebar">
+       
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+     <!-- First Section -->
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Hamid ullah</span>
+                <div>I am a passionate</div>
+                <div id="element"></div>
+            </div>
+            <div class="rightsection">
+                <img src="cv.png" alt="CV Image">
+            </div>
+        </section>
+
+        <hr>
+
+    <hr>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <h1 class="about-heading text-center">About Me</h1>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="hamid2.jpg" alt="Hamid Photo" class="img-fluid rounded mb-3">
+                <p class="about-text">
+                    I am Hamid, a passionate learner who loves creating clean and responsive websites. I enjoy solving problems and improving my skills every day.
+                </p>
+                <a href="Hamid_CV.pdf" download class="btn btn-primary download-btn">Download CV</a>
+            </div>
+            <div class="col-md-8">
+                <!-- Tabs -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills" type="button" role="tab">Skills</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="experience-tab" data-bs-toggle="tab" data-bs-target="#experience" type="button" role="tab">Experience</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab-pane fade" data-bs-toggle="tab" data-bs-target="#education" type="button" role="tab">Education</button>
+                    </li>
+                </ul>
+                <div class="tab-content p-3 border border-top-0">
+                    <div class="tab-pane fade show active" id="skills" role="tabpanel">
+                        <ul>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>Canva Designing</li>
+                            <li>Video Editing</li>
+                            <li>Bootstrap</li>
+                            <li>Python Basics</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="experience" role="tabpanel">
+                        <p>FRESH.</p>
+                    </div>
+                    <div class="tab-pane fade" id="education" role="tabpanel">
+                        <div class="mb-2">
+                            <button class="btn btn-outline-primary w-100 mb-1" onclick="toggleEdu('matric')">Matric</button>
+                            <div id="matric" class="edu-detail">
+                                <p><b>School:</b> Govt High School Khujari Babar Bannu</p>
+                                <p><b>Year:</b> 2021</p>
+                                <p><b>Marks:</b> 884 / 1100(80.36%)</p>
+                                <img src="matric.jpg" alt="Matric DMC" class="dmc-img">
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <button class="btn btn-outline-primary w-100 mb-1" onclick="toggleEdu('fsc')">FSc/D.COM</button>
+                            <div id="fsc" class="edu-detail">
+                                <p><b>College:</b> GCMS NO 2 Bannu</p>
+                                <p><b>Year:</b> 2021-2023</p>
+                                <p><b>Marks:</b> 928 / 1200(77.33%)</p>
+                                <img src="D.com.jpg" alt="FSc DMC" class="dmc-img">
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <button class="btn btn-outline-primary w-100 mb-1" onclick="toggleEdu('bs')">BS Computer Science</button>
+                            <div id="bs" class="edu-detail">
+                                <p><b>University:</b> University of Science and Technology Bannu</p>
+                                <p><b>Batch:</b> 2023-2027</p>
+                                <p><b>Semester:</b> 5th</p>
+                                <img src="bs.png" alt="BS Record" class="dmc-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container text-center my-5">
+        <h2>My Project</h2>
+        <h3>Study Portal Website</h3>
+        <p>A complete study website containing semester-wise notes, video lectures, assignments and helpful resources.</p>
+        <a href="https://hamidullah2233.github.io/.github.io/" target="_blank" class="btn btn-success slide-btn">Visit Website</a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container text-center my-5">
+        <h2>Contact Me</h2>
+        <p>Email: hamid255991@yahoo.com</p>
+        <div class="my-2 fs-3">
+            <a href="https://www.facebook.com/share/1Gm4TNfe2y/" target="_blank" class="text-primary me-2"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/" target="_blank" class="text-danger me-2"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" class="text-primary me-2"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/" target="_blank" class="text-dark me-2"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/923326474074" target="_blank" class="text-success"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Video Editor', 'Canva Designer'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true,
+            showCursor: false
+        });
+
+        function toggleEdu(id) {
+            let section = document.getElementById(id);
+            section.style.display = (section.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>
